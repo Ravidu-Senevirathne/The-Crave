@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="bg-white py-4 px-8 flex items-center justify-between shadow-md">
       {/* Logo */}
       <div className="flex items-center">
-        <span className="font-bold text-2xl text-gray-600 hover:text-accent transition-colors duration-300">The Crave</span>
+        <span className="font-bold text-2xl text-gray-600 hover:text-orange-500 transition-colors duration-300 cursor-pointer">The Crave</span>
       </div>
 
       {/* GooeyNav Navigation */}
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
 
       {/* CTA Button */}
-      <button className="bg-primary hover:bg-accent text-gray-600 rounded-full px-6 py-2 text-sm font-bold transition-colors duration-300 ease-in-out">
+      <button className="bg-orange-500 hover:bg-orange-700  text-white rounded-full px-6 py-2 text-sm font-bold transform transition-all  duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer ">
         SEE MENU
       </button>
     </header>

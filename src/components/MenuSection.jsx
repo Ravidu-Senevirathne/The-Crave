@@ -9,7 +9,7 @@ const MenuSection = () => {
       name: 'Margherita Classic',
       description:
         'A timeless favorite made with fresh mozzarella and hand-torn basil leaves — all on a perfectly crispy crust. Simple, authentic, and full of flavor.',
-      price: '$15.99',
+      price: 'LKR 1,850.00',
       imageUrl: 'https://img.freepik.com/free-photo/close-up-delicious-fast-food_23-2151910279.jpg?ga=GA1.1.1782891138.1747143947&semt=ais_items_boosted&w=740',
     },
     {
@@ -17,7 +17,7 @@ const MenuSection = () => {
       name: 'Spicy Chicken Inferno',
       description:
         'A bold pizza for those who like it hot. Turn up the heat with juicy grilled chicken, spicy jalapeños, red onions, and a fiery chili sauce blend.',
-      price: '$14.99',
+      price: 'LKR 2,200.00',
       imageUrl: 'https://img.freepik.com/free-photo/mushroom-pizza-with-tomato-sauce-served-round-bamboo-board_114579-1908.jpg?ga=GA1.1.1782891138.1747143947&semt=ais_items_boosted&w=740',
     },
     {
@@ -25,7 +25,7 @@ const MenuSection = () => {
       name: 'Veggie Delight Supreme',
       description:
         'Loaded with colorful bell peppers, mushrooms, olives, and onions, this veggie-packed pizza delivers freshness in every bite — no meat, all flavor.',
-      price: '$13.99',
+      price: 'LKR 1,500.00',
       imageUrl: 'https://img.freepik.com/free-photo/italian-pizza-with-chicken-salami-zucchini-tomatoes-herbs_2829-10838.jpg?ga=GA1.1.1782891138.1747143947&semt=ais_items_boosted&w=740',
     },
   ];

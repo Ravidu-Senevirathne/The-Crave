@@ -41,7 +41,7 @@ const ComboSection = () => {
 
           {/* Price and Savings */}
           <div className="mt-4 text-right">
-            <p className="text-xl font-bold">$21.99 - Save $4</p>
+            <p className="text-xl font-bold">LKR 2,000.00 - Save LKR 500.00</p>
           </div>
         </div>
       </div>
