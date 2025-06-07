@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Admin/Dashboard.jsx';
 import './App.css'
 import Navbar from './components/Navbar.jsx';
 import HeroSection from './components/HeroSection.jsx';
@@ -10,21 +12,28 @@ import BlogSection from './components/BlogSection.jsx';
 import Footer from './components/Footer.jsx';
 
 
+const MainLayout = () => (
+  <>
+    <Navbar/>
+    <HeroSection/>
+    <FeaturesSection/>
+    <MenuSection/>
+    <DealsSection/>
+    <CombosSection/>
+    <BlogSection/>
+    <Footer/>
+    
+  </>
+)
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <HeroSection/>
-      <FeaturesSection/>
-      <MenuSection/>
-      <DealsSection/>
-      <CombosSection/>
-      <BlogSection/>
-      <Footer/>
-      
-      
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/admin-dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   )
 }
 
