@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Admin/Dashboard.jsx';
 import './App.css'
 import Navbar from './components/Navbar.jsx';
@@ -12,6 +12,7 @@ import BlogSection from './components/BlogSection.jsx';
 import Footer from './components/Footer.jsx';
 
 
+
 const MainLayout = () => (
   <>
     <Navbar/>
@@ -22,19 +23,34 @@ const MainLayout = () => (
     <CombosSection/>
     <BlogSection/>
     <Footer/>
+    <Dashboard/>
+    
     
   </>
 )
 
+// Create router with future flags
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+  },
+  {
+    path: "/admin-dashboard",
+    element: <Dashboard />,
+  }
+], {
+  future: {
+    v7_startTransition: true,
+  }
+});
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainLayout />} />
-        <Route path="/admin-dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
-  )
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
 }
 
 export default App
