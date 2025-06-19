@@ -23,34 +23,9 @@ const MainLayout = () => (
     <CombosSection/>
     <BlogSection/>
     <Footer/>
-    <Dashboard/>
-    
-    
   </>
 )
 
-// Create router with future flags
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-  },
-  {
-    path: "/admin-dashboard",
-    element: <Dashboard />,
-  }
-], {
-  future: {
-    v7_startTransition: true,
-  }
-});
 
-function App() {
-  return (
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  );
-}
 
 export default App

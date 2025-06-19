@@ -1,15 +1,14 @@
 // src/components/Admin/SideBar.jsx
 import React from "react";
-import { FiHome, FiUsers, FiBook, FiFolder, FiUtensils, FiStar, FiSettings } from "react-icons/fi";
+import { FiHome, FiUsers, FiBook, FiFolder, FiCoffee, FiStar, FiSettings } from "react-icons/fi";
 
 const SideBar = () => {
-  const navItems = [
-    { icon: FiHome, label: "Dashboard" },
+  const navItems = [    { icon: FiHome, label: "Dashboard" },
     { icon: FiBook, label: "Orders" },
     { icon: FiUsers, label: "Customers" },
     { icon: FiBook, label: "Menu" },
     { icon: FiFolder, label: "Category" },
-    { icon: FiUtensils, label: "Foods" },
+    { icon: FiCoffee, label: "Foods" },
     { icon: FiStar, label: "Reviews" },
     { icon: FiSettings, label: "Settings" },
   ];
