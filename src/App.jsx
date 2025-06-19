@@ -1,7 +1,7 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider, Routes, Route, Router } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Admin/Dashboard.jsx';
-import './App.css'
+import './App.css';
 import Navbar from './components/Navbar.jsx';
 import HeroSection from './components/HeroSection.jsx';
 import FeaturesSection from './components/FeaturesSection.jsx';
@@ -11,30 +11,28 @@ import CombosSection from './components/ComboSection.jsx';
 import BlogSection from './components/BlogSection.jsx';
 import Footer from './components/Footer.jsx';
 
-
-
 const MainLayout = () => (
   <>
-    <Navbar/>
-    <HeroSection/>
-    <FeaturesSection/>
-    <MenuSection/>
-    <DealsSection/>
-    <CombosSection/>
-    <BlogSection/>
-    <Footer/>
+    <Navbar />
+    <HeroSection />
+    <FeaturesSection />
+    <MenuSection />
+    <DealsSection />
+    <CombosSection />
+    <BlogSection />
+    <Footer />
   </>
-)
-
-
+);
 
 function App() {
- <Router>
+  return (
+    <Router>
       <Routes>
-         <Route path="/" element={<MainLayout />} />
-         <Route path="/admin"element={<Dashboard/>}/>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/admin" element={<Dashboard />} />
       </Routes>
-      </Router>
+    </Router>
+  );
 }
 
 export default App;
