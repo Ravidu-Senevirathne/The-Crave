@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Routes, Route, Router } from 'react-router-dom';
 import Dashboard from './pages/Admin/Dashboard.jsx';
 import './App.css'
 import Navbar from './components/Navbar.jsx';
@@ -28,4 +28,13 @@ const MainLayout = () => (
 
 
 
-export default App
+function App() {
+ <Router>
+      <Routes>
+         <Route path="/" element={<MainLayout />} />
+         <Route path="/admin"element={<Dashboard/>}/>
+      </Routes>
+      </Router>
+}
+
+export default App;
